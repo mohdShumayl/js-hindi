@@ -11,5 +11,24 @@ let obj = {
 }
 //console.log(obj["name"])
 //console.log(obj.show())
-console.log(obj.age)
-console.log(obj[sym])
+//console.log(obj.age)
+//console.log(obj[sym])
+
+
+
+
+
+
+
+
+
+
+
+let arr = [2,3,5,6,8,1]
+arr.forEach((i) => {
+console.log(i/2)
+})
+
+//arr.forEach((element) => {
+//    console.log(element * 2)
+//})
