@@ -11,11 +11,21 @@ let obj = {
 }
 
 
+let obj1 = {abc:8, def:4}
+let obj2 = {c:3, d:5}
+let obj3 = {...obj1, ...obj2}
+//console.log(obj3)
+//console.log(Object.keys(obj3))
+//console.log(Object.values(obj3))
+//console.log(Object.entries(obj3))
 
 
+//object Destructure
+/*const{abc}=obj1
+console.log(abc)*/
 
-
-
+/*const{abc:a}=obj1
+console.log(a)*/
 
 
 /*
