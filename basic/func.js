@@ -6,10 +6,24 @@
 /*function practice(name){
   console.log(name)
 }*/
-
+ //expressions
 /*const practice = function(name){
     console.log(name)
 }*/
+
+// normal func can be called above its definition but expression cannot be called above func definition(gives error)
+
+/*practice()
+function practice(name){
+  console.log(name)
+}*/
+//expressions
+
+/*practice()   //this will give an error
+const practice = function(name){
+    console.log(name)
+}*/
+
 /*const practice = (name) => {
     console.log(name)
 }*/
