@@ -27,5 +27,8 @@ add(2,3)*/
 //OR
 //we can wrap it in parenthesis
 const addition = (num1, num2) => (console.log(num1 + num2))
+addition(5,9)
 
-addition(5,9)*/
+//for returning an Object
+const add = () => ({name: "Shumail"})
+console.log(add())*/
