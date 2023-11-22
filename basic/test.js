@@ -5,7 +5,7 @@ let myarr2 = [7,3,9]
 console.log(myarr.slice(1,4))
 
 //console.log(myarr.splice(2,1))
-console.log(myarr)
+//onsole.log(myarr)
 
 
 //console.log(myarr.splice(2,5))
@@ -13,3 +13,9 @@ console.log(myarr)
 
 //console.log(myarr.join())
 //console.log(typeof myarr)
+
+//terniary operator
+//condition?true:flase
+//condition?if code :else code
+
+//100 >= 180 ? console.log("yes") : console.log("No")
