@@ -1,3 +1,8 @@
+//for in loop returns a keys of an object and array
+//for of loop returns value of keys "but it cannot ittrate object"
+//to ittrate object we use for in loop and to ittrate array we use for of loop.
+/***********************************************************************************************************/
+
 //for of
 
 /*let arr = [1,2,3,4,5,6,7]
@@ -14,6 +19,7 @@ for (const n of name) {
 map.set("mohd","Shumail")
 map.set("yrhdhjg","tmieraih")
 map.set("ewhdhjg","twffgadih")
+
 //no Similar values can be inputed twice in map
 //map.set("mohd","Shumail")
 console.log(map)*/
@@ -43,15 +49,41 @@ for (const key of obj) {
 
 
 /**********************************************************************/
+//for in loop
 
 let obj = {
     name: "Mohd",
     "age": 23,
     phn: 536457466,
-    /*show: function(){
-        console.log(`my name is ${this.name},my age is ${this.age}`)
-    }*/
 }
+
+//for in loop gives keys of object and array we should have to ittrate further for getting value of keys
+/*for (const key in obj) {
+    console.log(key)
+}*/
+/*
 for (const key in obj) {
-    console.log(obj[key])
-}
+    console.log(`${key} and it's value is ${obj[key]}`)
+}*/
+
+let myArr = ["dhida","dsvfaop","hihgf","afidTRY","FEUHIKA"]
+/*for (const key in myArr) {
+    console.log(key)
+}*/
+/*for (const key in myArr) {
+    console.log(`${key} and it's value ${myArr[key]}`)
+}*/
+
+
+//map cant be ittrated by for in
+/*const myMap = new Map()
+map.set("mohd","Shumail")
+map.set("yrhdhjg","tmieraih")
+map.set("ewhdhjg","twffgadih")
+
+for (const key in myMap) {
+    console.log(key)
+}*/
+
+
+/**********************************************************************************************************/
