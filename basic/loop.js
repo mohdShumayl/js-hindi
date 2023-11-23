@@ -1,6 +1,7 @@
 //for in loop returns a keys of an object and array
 //for of loop returns value of keys "but it cannot ittrate object"
 //to ittrate object we use for in loop and to ittrate array we use for of loop.
+//call back doesn't have name.
 /***********************************************************************************************************/
 
 //for of
@@ -87,3 +88,42 @@ for (const key in myMap) {
 
 
 /**********************************************************************************************************/
+
+let code = ["js","java","php","swift","cpp"]
+
+/*code.forEach(function(element){
+    console.log(element)
+})*/
+
+/*code.forEach((i)=>{
+    console.log(i)
+})*/
+//code.forEach((element)=>console.log(element))
+
+/*function printme(item){
+    console.log(item)
+}
+//just pass refrence of function in foreach "printme", but do not execute it "printme()"
+code.forEach(printme)*/
+
+/*code.forEach((element, i_index, a_array)=>{
+    console.log(`${i_index} - ${element} and whole array is ${a_array}`)
+})*/
+
+let codeExt = [
+    {
+        langName: "java SC",
+        fileExt: "js"    
+    },
+    {
+        langName: "Java",
+        fileExt: "java"    
+    },
+    {
+        langName: "PHP",
+        fileExt: "php"    
+    }    
+]
+/*codeExt.forEach((elem)=>{
+    console.log(`lang name is ${elem.langName} and it's file extinsion ${elem.fileExt}`)
+})*/
