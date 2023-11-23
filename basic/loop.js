@@ -127,3 +127,50 @@ let codeExt = [
 /*codeExt.forEach((elem)=>{
     console.log(`lang name is ${elem.langName} and it's file extinsion ${elem.fileExt}`)
 })*/
+
+
+
+
+// to store specific values from array while doing ittration, for each loop directly doesn't return anything
+let myNums = [1,2,5,9,56,35,3,87,54,377]
+
+/*let my = myNums.forEach((element) => {
+    console.log(element)
+    return
+});
+
+console.log(my)*/
+
+//here comes filer for this purpose "it returns values"
+
+ //implesit return
+/*myNums.filter((elem)=> console.log(elem))
+
+let mine = myNums.filter((elem)=> elem)
+console.log(mine)*/
+
+/*  //explesit return " for explesit return we should have to use return keyword"
+let mine = myNums.filter((elem)=> {
+    console.log(elem)
+    return elem
+})
+console.log(mine)*/
+
+/*let mine = myNums.filter((elem)=> {
+    console.log(elem)
+    if (elem > 50) {
+       return elem
+    }
+})
+console.log(mine)*/
+
+
+
+//for returning values through foreach
+/*let mine = []
+myNums.forEach((elem)=>mine.push(elem))
+console.log(mine)*/
+
+/*let mine = []
+myNums.forEach((elem)=> {if(elem>10){mine.push(elem)}})
+console.log(mine)*/
