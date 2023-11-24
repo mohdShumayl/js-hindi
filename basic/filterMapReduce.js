@@ -32,4 +32,48 @@ let mymap = no.map((elem)=>{
 console.log(mymap)*/
 
 /********************************************************************************************/
-//Reduce
+//chaining
+
+//let no = [4,6,7,4,5,3]
+/*let mymap = no.map((elem)=>{
+    return elem + 10
+}).map((elem)=> elem + 1)
+console.log(mymap)*/
+
+/*let mymap = no.map((elem)=> elem + 10).map((elem)=> elem + 1)
+console.log(mymap)*/ 
+
+/*let mymap = no.map((elem)=> elem + 10).map((elem)=> elem + 1).filter((elem)=> elem > 15)
+console.log(mymap)*/
+
+
+/********************************************************************************************/
+//reduce 
+
+/*let no = [4,6,7]
+let myy = no.reduce(function(accumulator, currentValue){
+    console.log(accumulator +" --- "+ currentValue)
+    return accumulator + currentValue
+},0 /*0-accumulator*//*)
+console.log(myy)*/
+
+/*let no = [4,6,7,36]
+let myy = no.reduce((accumulator, currentValue)=> accumulator + currentValue ,0)
+console.log(myy)*/
+
+/*let cart = [
+    {
+        course: "py",
+        price: 1200
+    },
+    {
+        course: "php",
+        price: 1999
+    },
+    {
+        course: "js",
+        price: 1500
+    },
+]
+let total = cart.reduce((initialVal, prices)=> initialVal + prices.price, 0)
+console.log(total)*/
