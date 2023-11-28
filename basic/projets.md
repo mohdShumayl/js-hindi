@@ -5,7 +5,7 @@
 [click me ](google.com)
 
 # Solution Code
-## project 1
+
 ```javascript
 let btns = document.querySelectorAll('.button')
 let body = document.querySelector('body')
