@@ -1,10 +1,10 @@
-# projects
+# PROJECTS  
+### Project Directory Link [click me](https://stackblitz.com/edit/dom-project-chaiaurcode-jux7b9?file=2-BMICalculator%2Fstyle.css,2-BMICalculator%2Findex.html,2-BMICalculator%2Fchaiaurcode.js) 
 
-## project one 
 
-[click me ](google.com)
+# Project 1
 
-# Solution Code
+## Solution Code
 
 ```javascript
 let btns = document.querySelectorAll('.button')
@@ -38,7 +38,7 @@ btns.forEach((btns)=>{
 
 # Project 2
 
-## Solution code 
+## Solution Code 
 
 ```javascript
 
