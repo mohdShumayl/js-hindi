@@ -3507,18 +3507,51 @@ let players = [
 ];
 //QB,  2 RB,  3 WR, TE, Flex, DST
 
+let i = 0;
+
 //this stores my total expenditure on team while one go
 let total = 0;
 
 //it stores all the previous totals of Squad, which in less the 50K
 const previousTotals = [];
-
+let playersTeamedUp = {"QB":[], "RB":[], "WR":[], "TE":[], "FLEX":[], "DST":[]};
+pla
 const qb = players.filter(players => players.Pos === "QB");
 const rb = players.filter(players => players.Pos === "RB");
 const wr = players.filter(players => players.Pos === "WR");
 const te = players.filter(players => players.Pos === "TE");
 const dst = players.filter(players => players.Pos === "DST");
 const flex = players.filter(players => players.Pos === "RB" || players.Pos === "WR" || players.Pos === "TE" );
-//console.log(flex.length)    
 
+//console.log(qb[i].Sal_k) 
 
+let qbs = qb[i].Sal_k;
+
+let rbs = rb.filter(rb => rb.Sal_k <= qb[i].Sal_k);
+console.log(rbs[i].Sal_k)
+console.log(rbs[i+1].Sal_k)
+
+let wrs = wr.filter(wr => wr.Sal_k <= rbs[i+1].Sal_k);
+console.log(wrs[i].Sal_k)
+console.log(wrs[i+1].Sal_k)
+console.log(wrs[i+2].Sal_k)
+
+let tes = te.filter(te => te.Sal_k <= wrs[i+2].Sal_k);
+console.log(tes[i].Sal_k)
+
+let dsts = dst.filter(dst => dst.Sal_k <= tes[i].Sal_k);
+console.log(dsts[i].Sal_k)
+
+let flexs =  flex.filter(flex => flex.Sal_k <= dsts[i].Sal_k);
+console.log(flexs[i].Sal_k)
+
+for
+
+function squadTotal(){
+    total = parseFloat(qb[i].Sal_k) + parseFloat(rbs[i].Sal_k) + parseFloat(rbs[i+1].Sal_k) + parseFloat(wrs[i].Sal_k) + parseFloat(wrs[i+1].Sal_k) + parseFloat(wrs[i+2].Sal_k) + parseFloat(tes[i].Sal_k + dsts[i].Sal_k) + parseFloat(flexs[i].Sal_k);
+    console.log(total.toFixed(2));
+}
+squadTotal()
+
+function validatesquadTotal(){
+}
