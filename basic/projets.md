@@ -96,3 +96,36 @@ setInterval(()=>{
 
 
 ```
+# Project 4
+## Solution Code
+```javascript
+
+//generate random color
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+let intervalId;
+let changeColor = function () {
+  if (!intervalId) {
+    intervalId = setInterval(cgclr, 1000);
+  }
+  function cgclr() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+
+let stopChangeColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+document.querySelector('#start').addEventListener('click', changeColor);
+document.querySelector('#stop').addEventListener('click', stopChangeColor);
+
+
+```
