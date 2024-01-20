@@ -10,7 +10,7 @@
 ## parts of OOP
 Object literal (refers to an object)
 
-- Constructor function (refers to new, which gives an new instance of an object)
+- Constructor function (refers to new, which gives an new instance of an object) ,instance of (from mdn)
 - Prototypes
 - Classes
 - Instances (new, this)
