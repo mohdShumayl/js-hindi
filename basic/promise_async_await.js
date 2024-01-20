@@ -193,3 +193,76 @@ consumePromiseFive()*/
 // }).finally(()=>{
 //     console.log("finallyyyyyy")
 // })
+
+
+
+// let promise5 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         let error = true;
+//         if (!error){
+//             resolve({
+//                 name: 'chai',
+//                 subs: '189k'
+//             })
+//         }
+//         else{
+//             reject('error has been occured')
+//         }
+//     },1000)    
+// })
+// async function xyz(){
+//     let resp = await promise5;
+//     console.log(resp);
+// }
+// xyz()
+
+
+
+// let promise7 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         let error = false;
+//         if (!error){
+//             resolve({
+//                 name: 'chai',
+//                 subs: '189k'
+//             })
+//         }
+//         else{
+//             reject('error has been occured')
+//         }
+//     },1000)    
+// })
+// async function yz(){
+//     try {
+//         let resp = await promise7;
+//         console.log(resp);
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+// yz()
+
+
+
+// async function getAllUsers(){
+//    try {
+//         let response = await fetch('https://api.github.com/users/hiteshchoudhary')
+//         let data =  await response.json()
+//         console.log(data)
+//    } catch (error) {
+//      console.log(error)
+//    }
+// }
+// getAllUsers()
+
+
+
+// fetch('https://api.github.com/users/hiteshchoudhary')
+// .then((resp)=>{
+//     console.log(resp)
+//     return resp.json()
+// }).then((data)=>{
+//     console.log(data)
+// }).catch((error)=>{
+//     console.log(error)
+// })
